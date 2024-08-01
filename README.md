@@ -24,13 +24,14 @@ The history of the C programming language is rich and significant in the realm o
 
 <p>A C program typically consists of one or more functions, with one function being the <b>main()</b> function. The main() function is the entry point of the program, where execution begins. C programs are organized into sections, such as preprocessing directives, variable declarations, and function definitions.</p>
 
-<pre><code>#include &lt;stdio.h&gt;  /* Preprocessing directive */
+```c
+#include <stdio.h>;  /* Preprocessing directive */
 
 int main() {        /* Function definition */
     printf("Hello, World!");  /* Statement */
     return 0;
 }
-</code></pre>
+```
 
 <h2>Compiling and Running C Programs</h2>
 
@@ -47,11 +48,12 @@ int main() {        /* Function definition */
   <li><code>char</code>: Stores single character values.</li>
 </ul>
 
-<pre><code>int x = 10;       /* Integer */
+```c
+int x = 10;       /* Integer */
 float y = 3.14f;  /* Single-precision float */
 double z = 2.718; /* Double-precision float */
 char c = 'A';     /* Character */
-</code></pre>
+```
 
 <h3>Type Modifiers</h3>
 
@@ -62,31 +64,34 @@ char c = 'A';     /* Character */
   <li><code>signed</code>: Modifies an integer type to represent both positive and negative values (default for <code>int</code>).</li>
 </ul>
 
-<pre><code>short s = 32767;        /* Short integer */
+```c
+short s = 32767;        /* Short integer */
 unsigned int ui = 4294967295U; /* Unsigned integer */
 long long ll = 9223372036854775807LL; /* Long long integer */
-</code></pre>
+```
 
 <h3>Declaring and Initializing Variables</h3>
 
 <p>Variables must be declared before they can be used in a C program. Variables can be initialized during declaration or later in the program.</p>
 
-<pre><code>int a;      /* Declaration */
+```c
+int a;      /* Declaration */
 a = 5;      /* Initialization */
 
 int b = 10; /* Declaration and initialization */
-</code></pre>
+```
 
 <h3>Constants and Literals</h3>
 
 <p>Constants are fixed values that cannot be modified during program execution. <b>Literals</b> are constant values represented directly in the source code.</p>
 
-<pre><code>const double PI = 3.14159; /* Constant */
+```c
+const double PI = 3.14159; /* Constant */
 
 int x = 42;    /* Integer literal */
 char y = 'Z';  /* Character literal */
 float z = 3.5f; /* Floating-point literal */
-</code></pre>
+```
 
 <h2>Operators and Expressions</h2>
 
@@ -100,13 +105,14 @@ float z = 3.5f; /* Floating-point literal */
   <li><code>%</code> (Modulus)</li>
 </ul>
 
-<pre><code>int a = 10, b = 3;
+```c
+int a = 10, b = 3;
 int sum = a + b;     /* sum = 13 */
 int diff = a - b;    /* diff = 7 */
 int prod = a * b;    /* prod = 30 */
 int quot = a / b;    /* quot = 3 */
 int rem = a % b;     /* rem = 1 */
-</code></pre>
+```
 
 <h3>Relational Operators</h3>
 
@@ -119,7 +125,8 @@ int rem = a % b;     /* rem = 1 */
   <li><code>&lt;=</code> (Less than or equal to)</li>
 </ul>
 
-<pre><code>int x = 5, y = 10;
+```c
+int x = 5, y = 10;
 if (x == y) {
     /* Code to execute if x is equal to y */
 } else if (x &gt; y) {
@@ -127,7 +134,7 @@ if (x == y) {
 } else {
     /* Code to execute if x is less than y */
 }
-</code></pre>
+```
 
 <h3>Logical Operators</h3>
 
